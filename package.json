@@ -19,7 +19,7 @@
     "tailwind.preset.cjs"
   ],
   "scripts": {
-    "build": "tsup && rm -rf dist/tokens && cp -r src/tokens dist/tokens",
+    "build": "tsup && cp -r src/tokens/. dist/tokens",
     "dev": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest",
